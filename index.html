@@ -58,6 +58,29 @@
                 text-align: center;
             }
         }
+        @keyframes fadeIn{
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .hero{
+            animation: fadeIn 1s ease;
+        }
+        h2{
+            animation: fadeIn 0.8s ease;
+        }
+        .btn{
+            transition: transform 0.2s ease;
+        }
+        .btn:hover{
+            transform: scale(1.05);
+            background-color: #1a5f7a;
+        }
         nav a{
             color: white;
             margin-right: 20px;
